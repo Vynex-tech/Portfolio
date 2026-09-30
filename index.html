@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vignesh K S — Creative Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div><div class="cursor" id="cur"></div>
+<header class="site-header" id="siteHeader">
+ <div class="hdr-inner">
+  <div class="hdr-left">
+   <a href="#expand" class="brand">Vignesh<span class="brand-accent">.</span></a>
+  </div>
+  <nav aria-label="Main" id="mainNav">
+   <div class="nav-indicator" id="navIndicator"></div>
+   <a href="#expand" class="nav-link active" data-nav>Home</a>
+   <a href="#about" class="nav-link" data-nav>About</a>
+   <a href="#work" class="nav-link" data-nav>Services</a>
+   <a href="#contact" class="nav-link" data-nav>Portfolio</a>
+  </nav>
+ </div>
+</header>
+
+<section class="expand" id="expand"><span id="top"></span>
+ <div class="stage">
+  <div class="grid"></div>
+  <div class="card" id="card"><div class="grid"></div><div class="p2"></div>
+   <div class="reveal" id="rev"><div><b>Engineer</b><span>ESP32, LoRa, sensors and optical fiber.</span></div><div><b>Creator</b><span>Web design, 3D web, photography, video editing.</span></div><div><b>Musician</b><span>Sound that shapes how a project feels.</span></div></div>
+  </div>
+  <div class="big"><span id="w1" class="shiny">Engineer</span><span id="w2" class="shiny" style="--c:#ffb547;--sh:#fff">× Creator</span></div>
+  <div class="hint shiny" id="hint" style="--c:#b7d0ee">Keep scrolling to expand</div>
+ </div>
+</section>
+
+<section class="work" id="work">
+ <div class="stage">
+  <div class="head"><h2>Selected work</h2><p>Scroll sideways through the projects. Open any card for details.</p></div>
+  <div class="track" id="track">
+   <button class="pc" data-k="0"><div class="art a1"></div><div class="t"><h3>NER-SHIELD</h3><small>Landslide early warning</small><div class="tags"><em>AI</em><em>IoT</em><em>Sensors</em></div></div></button>
+   <button class="pc" data-k="1"><div class="art a2"></div><div class="t"><h3>GEOOPT</h3><small>Optical fiber sensing</small><div class="tags"><em>ESP32</em><em>LoRa</em><em>AI</em></div></div></button>
+   <button class="pc" data-k="2"><div class="art a3"></div><div class="t"><h3>Vignesh Digital Lab</h3><small>Portfolio and studio site</small><div class="tags"><em>React</em><em>Framer Motion</em></div></div></button>
+   <button class="pc" data-k="3"><div class="art a4"></div><div class="t"><h3>Visual experiments</h3><small>3D web and motion studies</small><div class="tags"><em>3D</em><em>Video</em><em>Photography</em></div></div></button>
+  </div>
+ </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div id="mq"></div></div>
+
+<section class="sec" id="about">
+ <div class="about">
+  <h2 class="pull" data-pull>Engineer by training, creator by habit.</h2>
+  <p>I'm an Electronics and Communication Engineering student at ACE College of Engineering, Trivandrum. I build hardware that senses the world and websites that make that data feel clear, from ESP32 nodes to scroll-driven interfaces.</p>
+ </div>
+</section>
+
+<section class="sec contact" id="contact">
+ <h2 class="pull" data-pull>Let's build it.</h2>
+ <ul class="links">
+  <li><a href="mailto:you@example.com">Email <span>you@example.com</span></a></li>
+  <li><a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram <span>@yourhandle</span></a></li>
+  <li><a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">LinkedIn <span>in/yourname</span></a></li>
+  <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub <span>@yourusername</span></a></li>
+ </ul>
+</section>
+<footer><span>Vignesh K S</span><span>Kerala, India</span></footer>
+
+<dialog id="dlg"><div class="art" id="dart"></div><div class="body"><h3 id="dt"></h3><p id="dd"></p><div class="tags" id="dg"></div><button id="dx">Close</button></div></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
